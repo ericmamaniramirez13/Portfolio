@@ -26,8 +26,8 @@ const distance = Math.sqrt(dx * dx + dy * dy);
 if (distance < cursor.radius) {
   const angle = Math.atan2(dy, dx);
   const repulsionForce = (cursor.radius - distance) / cursor.radius;
-  this.vx += Math.cos(angle) * repulsionForce * 0.5;
-  this.vy += Math.sin(angle) * repulsionForce * 0.5;
+  this.vx += Math.cos(angle) * repulsionForce * 1;
+  this.vy += Math.sin(angle) * repulsionForce * 1;
 } else {
   // Gradually return to original velocity
   const speed = Math.sqrt(this.originalVx * this.originalVx + this.originalVy * this.originalVy);
@@ -43,7 +43,7 @@ if (distance < cursor.radius) {
     this.y += this.vy;
 
     // Store original velocity
-    if (distance > cursor.radius + 10) {
+    if (distance > cursor.radius + 15) {
       this.originalVx = this.vx;
       this.originalVy = this.vy;
     }
@@ -93,11 +93,11 @@ function drawLines() {
       const dx = particles[i].x - particles[j].x;
       const dy = particles[i].y - particles[j].y;
       const distance = Math.sqrt(dx * dx + dy * dy);
-      if (distance < 50) {
+      if (distance < 60) {
         ctx.beginPath();
         ctx.moveTo(particles[i].x, particles[i].y);
         ctx.lineTo(particles[j].x, particles[j].y);
-        ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / 50})`;
+        ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / 60})`;
         ctx.stroke();
       }
     }
