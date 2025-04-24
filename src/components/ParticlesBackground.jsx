@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../App.css';
+import "../ParticlesBackground.css";
 
 const ParticlesBackground = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const ParticlesBackground = () => {
         background: {
           color: { value: "#000000" }
         },
-        fpsLimit: 100,
+        fpsLimit: 120,
         interactivity: {
           events: {
             onHover: {
