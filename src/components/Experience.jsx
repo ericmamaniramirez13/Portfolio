@@ -15,7 +15,7 @@ const experiences = [
         company: 'Amazon',
         logo: amazonLogo,
         role: 'Software Engineer Intern',
-        time: 'Summer 2024 (Offer Extended)',
+        time: 'May 2025 - Present',
         description:
           "I'll work at Amazon in the store organizacion. Details are yet to be determined.",
       },

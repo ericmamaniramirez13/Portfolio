@@ -1,17 +1,26 @@
-
+import '../About.css';
+import BYUI from "../assets/BYUI_blue.svg";
 
 const About = () => {
     return (
         <div className="about">
             <h1>Eric Mamani</h1>
-<h3>Software Engineer | Math Nerd</h3>
+            <h3>Software Engineer | Math Nerd</h3>
 
-<p>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=635BFF&center=true&vCenter=true&width=435&lines=Software+Engineer" alt="Typing SVG" />
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00B8FF&center=true&vCenter=true&width=435&lines=React+%7C+Java+%7C+Python+Developer" alt="Typing SVG" />
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00FFA3&center=true&vCenter=true&width=435&lines=Math+Nerd+%7C+Problem+Solver" alt="Typing SVG" />
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=FF61C3&center=true&vCenter=true&width=435&lines=Lifelong+Learner" alt="Typing SVG" />
-</p>
+            <p>
+                <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=635BFF&center=true&vCenter=true&width=435&lines=Software+Engineer" alt="Typing SVG" />
+                <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00B8FF&center=true&vCenter=true&width=435&lines=React+%7C+Java+%7C+Python+Developer" alt="Typing SVG" />
+                <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00FFA3&center=true&vCenter=true&width=435&lines=Math+Nerd+%7C+Problem+Solver" alt="Typing SVG" />
+                <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=FF61C3&center=true&vCenter=true&width=435&lines=Lifelong+Learner" alt="Typing SVG" />
+            </p>
+            <p>I'm a passionate software engineer with a strong foundation in computer science and mathematics. I love solving complex problems and building efficient solutions.</p>
+            <p>Currently, I'm working as a Software Engineer Intern at Amazon, where I am gaining hands-on experience in software development and collaborating with talented teams.</p>
+            <div id="about-me">
+                <p>Bachelor of Science in <u>Computer Science</u></p>
+                <p>🎓 Graduated(07/2024)</p>
+                <p>Brigham Young University - Idaho</p>
+                <img src = {BYUI}/>
+            </div>
         </div>
     );
 }

@@ -7,7 +7,7 @@ const Resume = () => {
         <a href="EricMamaniPortfolio.pdf" target="_blank" rel="noopener noreferrer" download>
           <button>Download Resume</button>
         </a>
-        <p>Click the button below to download my resume.</p>
+        <p>Click the button above to download my resume.</p>
       </div>
     );
   };
