@@ -1,0 +1,18 @@
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 208, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    border: rgb(138, 138, 196) solid 1px;
+    padding-bottom: 20px;
+}
+.about {
+    margin: 0 30px;
+}
+#about-me img {
+    border: white solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+}
