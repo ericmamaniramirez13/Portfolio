@@ -1,0 +1,73 @@
+.experience-container {
+
+margin: 0 auto;
+}
+
+.experience-container h2 {
+text-align: center;
+}
+
+.experience-card {
+display: flex;
+align-items: center;;
+width: 100%;
+background-color: #1a1414;
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 15px;
+box-shadow: 1px 1px 0px 0px rgb(111, 103, 103);
+transition: transform 0.3s ease;;
+}
+
+.experience-card:hover {
+filter: drop-shadow(0 0 10px #00ffe1);
+transform: scale(1.01);
+}
+
+.logo-section {
+margin-right: 20px;
+min-width: 100px;
+}
+
+.company-logo {
+width: 80px;
+animation: spin 20s linear infinite;
+transition: transform 0.3s ease, filter 0.3s ease;
+filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.experience-card:hover .company-logo{
+transform: scale(1.1);
+filter: drop-shadow(0 0 10px #00ffe1);
+animation: none;
+}
+
+.text-section {
+flex: 1;
+
+display: flex;
+flex-direction: column;
+
+
+color: white;
+text-align: left;
+
+font-size: 1rem;
+margin: 0 auto;
+
+}
+
+.exp-time {
+font-style: italic;
+color: #ccc;
+margin-bottom: 10px;
+}
+
+@keyframes spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}

@@ -1,0 +1,13 @@
+.contact-logos img {
+    background: white;
+    width: 50px;
+}
+.contact-logos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.contact{
+    width: 100%;
+}
