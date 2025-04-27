@@ -1,5 +1,6 @@
 import '../About.css';
 import BYUI from "../assets/BYUI_blue.svg";
+import Diploma from "../assets/Diploma.jpg";
 
 const About = () => {
     return (
@@ -16,10 +17,15 @@ const About = () => {
             <p>I'm a passionate software engineer with a strong foundation in computer science and mathematics. I love solving complex problems and building efficient solutions.</p>
             <p>Currently, I'm working as a Software Engineer Intern at Amazon, where I am gaining hands-on experience in software development and collaborating with talented teams.</p>
             <div id="about-me">
-                <p>Bachelor of Science in <u>Computer Science</u></p>
-                <p>🎓 Graduated(07/2024)</p>
-                <p>Brigham Young University - Idaho</p>
-                <img src = {BYUI}/>
+                <div className="grad-info">
+                    <p>Bachelor of Science in <u>Computer Science</u></p>
+                    <p>🎓 Graduated(07/2024)</p>
+                    <p>Brigham Young University - Idaho</p>
+                    <img src = {BYUI} alt='School Logo BYU-I'/>
+                </div>
+                <div className='diploma'>
+                    <img src={Diploma} alt="Diploma" />
+                </div>
             </div>
         </div>
     );
