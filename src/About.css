@@ -11,8 +11,28 @@
 .about {
     margin: 0 30px;
 }
-#about-me img {
+#about-me .grad-info img {
     border: white solid 1px;
     border-radius: 15px;
     padding: 10px;
+}
+#about-me .diploma img {
+    width: 400px;
+    margin-top: 15px;
+    border: rgb(163, 87, 87) solid 4px;
+    border-radius: 15px;
+}
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+    #about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-me .diploma img {
+        width: 400px;
+    }
 }
