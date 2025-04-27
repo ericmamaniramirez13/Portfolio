@@ -1,3 +1,11 @@
+.about {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    margin: 0 30px;
+    padding-bottom: 15px;
+}
 #about-me {
     display: flex;
     flex-direction: column;
@@ -6,10 +14,7 @@
     backdrop-filter: blur(2px);
     border-radius: 15px;
     border: rgb(138, 138, 196) solid 1px;
-    padding-bottom: 20px;
-}
-.about {
-    margin: 0 30px;
+    padding-bottom: 10px;
 }
 #about-me .grad-info img {
     border: white solid 1px;
@@ -33,6 +38,6 @@
         align-items: center;
     }
     #about-me .diploma img {
-        width: 400px;
+        width: 300px;
     }
 }
