@@ -55,3 +55,36 @@
     border-radius: 10px;
     
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-right: 20px;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 1px;
+    display: none;
+  }
+  .navbar ul li {
+    background: rgb(216, 149, 149);
+  }
+  .navbar ul.open{
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}

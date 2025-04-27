@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import '../NavBar.css'; // Assuming you have a CSS file for styling
 import "./About.jsx";
 import About from './About.jsx';
@@ -8,7 +8,8 @@ import Contact from './Contact.jsx';
 
 
 const Navbar = () => {
-    const [view, setView] = React.useState('home');
+    const [view, setView] = useState('home');
+    const [isOpen, setIsOpen] = useState(false);
 
     const renderContent = () => {
         switch (view) {
@@ -33,13 +34,18 @@ const Navbar = () => {
     <>
         <nav className="navbar">
             <h1>Eric's Portfolio</h1>
-            <ul>
-                <li><button onClick = {() => setView("about")}>About</button></li>
-                <li><button onClick = {() => setView("experience")}>Experience</button></li>
-                <li><button onClick = {() => setView("projects")}>Projects</button></li>
-                <li><button onClick = {() => setView("skills")}>Skills</button></li>
-                <li><button onClick = {() => setView("resume")}>Resume</button></li>
-                <li><button onClick = {() => setView("contact")}>Contact</button></li>
+            <div>
+                <button className= "hamburger" onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? 'X' : '☰'}
+                </button>
+            </div>
+            <ul className={isOpen ? "open" : ""}>
+                <li><button onClick = {() => {setView("about"); setIsOpen(false);}}>About</button></li>
+                <li><button onClick = {() => {setView("experience"); setIsOpen(false);}}>Experience</button></li>
+                <li><button onClick = {() => {setView("projects"); setIsOpen(false);}}>Projects</button></li>
+                <li><button onClick = {() => {setView("skills"); setIsOpen(false);}}>Skills</button></li>
+                <li><button onClick = {() => {setView("resume"); setIsOpen(false);}}>Resume</button></li>
+                <li><button onClick = {() => {setView("contact"); setIsOpen(false);}}>Contact</button></li>
             </ul>
         </nav>
         <div className = "display-area">
