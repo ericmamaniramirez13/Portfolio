@@ -22,10 +22,9 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-top: 20px;
+    padding-top: 30px;
 }
-object {
+embed {
     max-width: 700px;
     border-radius: 15px;
 }

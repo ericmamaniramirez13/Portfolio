@@ -5,6 +5,7 @@ import About from './About.jsx';
 import Experience from './experience.jsx';
 import Resume from './Resume.jsx';
 import Contact from './Contact.jsx';
+import Skills from './Skills.jsx';
 
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
             case 'projects':
                 return <h3 className="content">My Projects</h3>;
             case 'skills':
-                return <h3 className="content">Skills</h3>;
+                return <h3 className="content">{<Skills />}</h3>;
             case 'resume':
                 return <h3 className="content">{<Resume />}</h3>;
             case 'contact':
