@@ -82,6 +82,14 @@
     display: flex;
   }
   .hamburger {
-    display: flex;
+    all: unset;
+    color: black;
+    background-color: rgb(216, 149, 149);
+    text-decoration: none;
+    /*border: 1px solid white;*/
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 20px;
   }
 }

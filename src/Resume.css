@@ -1,4 +1,4 @@
-button {
+.resume-container button {
     all: unset;
     color: black;
     background-color: rgb(216, 149, 149);
@@ -13,7 +13,7 @@ button {
     border-radius: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
-button:hover {
+.resume-container button:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 10px #00ffe1);
 }
