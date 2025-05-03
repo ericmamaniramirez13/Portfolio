@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../Navbar.css'; // Assuming you have a CSS file for styling
 import "./About.jsx";
 import About from './About.jsx';
-import Experience from './experience.jsx';
+import Experience from './Experience.jsx';
 import Resume from './Resume.jsx';
 import Contact from './Contact.jsx';
 import Skills from './Skills.jsx';
