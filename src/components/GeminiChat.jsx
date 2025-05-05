@@ -4,7 +4,9 @@ import { GoogleGenAI } from "@google/genai";
 import { useState, useRef, useEffect } from "react";
 import GEMINI from "../assets/gemini.svg";
 import "../GeminiChat.css";
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+
+//dotenv.config();
+//const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 fetch("InitialPrompt.txt")
     .then(response => response.text())
@@ -23,7 +25,7 @@ const GeminiChat = () => {
     const [history, setHistory] = useState(["Gemini: " + response])
     const chatScrollRef = useRef(null)
     const inputRef = useRef(null);
-    const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
     const main = async (e) => {
         e.preventDefault();
@@ -33,10 +35,14 @@ const GeminiChat = () => {
           model: "gemini-2.0-flash-lite",
           contents: conversation,
         });
+        /*const res = await fetch('/api/chat', { // notice: just "/api/chat"
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify( conversation ),
+          });
+          console.log(conversation)
+        const AIresponse = await res.json();*/
         setResponse(AIresponse.text);
-        //console.log(AIresponse.text);
-        /*history.push("You: " + prompt)
-        history.push("Gemini: " + AIresponse.text)*/
         setHistory(prevHistory => [
             ...prevHistory,
             "You: " + prompt,
@@ -62,8 +68,7 @@ return (
  
             </div>
             <form onSubmit={main}>
-                <input type="text" value={prompt} onChange={(e) => setPrompt(e.target.value)} placeholder="Ask anything, for example: Why should I hire Eric?" ref={inputRef}/>
-
+                <input type="text" value={prompt} onChange={(e) => setPrompt(e.target.value)} placeholder="Ask anything, Ex: Why should I hire Eric?" ref={inputRef}/>
                 <button type="submit">Send</button>
             </form>
             <div className="response" ref={chatScrollRef}>
