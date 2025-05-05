@@ -66,9 +66,60 @@ input {
       transform: scale(1);
     }
 }
-.chat-text{
+
+.chat-text {
+    position: relative;
     text-align: center;
-}
+    padding: 5px;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px; /* optional: rounded corners */
+    z-index: 0;
+    border: 2px solid transparent; /* Needed! */
+  }
+  
+  .chat-text::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px; /* thickness of the border */
+    background: linear-gradient(
+      270deg,
+      #08678a,
+      #4760e0,
+      #43064b,
+      #7a288a,
+      #0a4169
+    );
+    background-size: 600% 600%;
+    animation: animated-gradient 5s ease infinite;
+    mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    border-radius: 8px; /* match border radius */
+    z-index: -1;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes animated-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 .equis {
     all: unset;
     position: absolute;
@@ -92,7 +143,7 @@ input {
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 10px;
     bottom: 60px;
     top: 10%;
@@ -120,3 +171,4 @@ form button {
     border-radius: 10px;
 
 }
+

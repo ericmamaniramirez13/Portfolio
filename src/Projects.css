@@ -1,0 +1,102 @@
+/* --- General Styles --- */
+.projects-grid {
+    border: white 1px solid;
+    border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 40px;
+  gap: 2rem;
+  padding: 2rem;
+  background: transparent;
+}
+
+/* --- Cool Card Glow Animation --- */
+.glow-card {
+  position: relative;
+  background: linear-gradient(135deg, #e5dfdf, #08d1f4);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 0 transparent;
+  z-index: 1;
+}
+
+.glow-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    #00f0ff,
+    #ff00c8,
+    #00f0ff,
+    #ff00c8
+  );
+  background-size: 400% 400%;
+  animation: rotateBackground 4s linear infinite;
+  z-index: 0;
+  opacity: 0.6;
+  filter: blur(40px);
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(10, 10, 10, 0.9);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+    min-height: 230px;
+}
+
+.card-content h2 {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.card-content p {
+  color: #cccccc;
+  font-size: 1rem;
+}
+
+/* --- Cool Button inside the Card --- */
+.card-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #0b646b, #5e134c);
+  border: white 1px solid;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.4s ease, transform 0.4s ease;
+}
+
+.card-button:hover {
+  background: linear-gradient(45deg, #5e134c, #0b646b);
+  transform: scale(1.05);
+}
+
+/* --- Hover effect for the entire card --- */
+.glow-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 240, 255, 0.5);
+}
+
+/* --- Background Animation for the Glow --- */
+@keyframes rotateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
