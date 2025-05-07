@@ -1,47 +1,40 @@
 /* --- General Styles --- */
 .projects-grid {
-    border: white 1px solid;
+    border: rgb(118, 70, 143) 1px solid;
     border-radius: 15px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin-top: 40px;
-  gap: 2rem;
-  padding: 2rem;
-  background: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 40px;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 /* --- Cool Card Glow Animation --- */
 .glow-card {
   position: relative;
-  background: linear-gradient(135deg, #e5dfdf, #08d1f4);
   border-radius: 1rem;
   overflow: hidden;
   padding: 1px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: 0 0 0 transparent;
-  z-index: 1;
 }
 
 .glow-card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    45deg,
-    #00f0ff,
-    #ff00c8,
-    #00f0ff,
-    #ff00c8
-  );
-  background-size: 400% 400%;
-  animation: rotateBackground 4s linear infinite;
-  z-index: 0;
-  opacity: 0.6;
-  filter: blur(40px);
-}
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      #00f0ff,
+      #ff00c8,
+      #00f0ff,
+      #ff00c8
+    );
+    background-size: 400% 400%;
+    animation: rotateBackground 4s linear infinite;
+
+  }
 
 .card-content {
   position: relative;
@@ -55,7 +48,6 @@
 
 .card-content h2 {
   font-size: 1.1rem;
-  color: #ffffff;
 }
 
 .card-content p {
@@ -100,3 +92,14 @@
     background-position: 0% 50%;
   }
 }
+@media (max-width: 768px) {
+    .glow-card::before {
+      display: none; /* no moving glow on phones */
+    }
+    .glow-card{
+        border: white 1px solid;
+    }
+    .card-content{
+        background: rgba(10, 10, 10, 0.4);
+    }
+  }
