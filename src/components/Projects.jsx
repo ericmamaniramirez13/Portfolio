@@ -2,7 +2,7 @@ import '../Projects.css'
 
 const projects = [
   {
-  title: "ChatBots",
+  title: "Chat Bot",
   description : "Integrate AI as a chat agent to some application 🚀",
   link : "https://github.com/ericmamaniramirez13/ChatBots",
   },

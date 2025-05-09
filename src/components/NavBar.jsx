@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../Navbar.css'; // Assuming you have a CSS file for styling
+import '../NavBar.css';
 import "./About.jsx";
 import About from './About.jsx';
 import Experience from './Experience.jsx';
