@@ -1,0 +1,108 @@
+/* --- General Styles --- */
+.section-effect {
+    border: rgb(118, 70, 143) 1px solid;
+    border-radius: 15px;
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    margin-top: 40px;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* --- Cool Card Glow Animation --- */
+.glowcard {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.glowcard::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      #00f0ff,
+      #ff00c8,
+      #00f0ff,
+      #ff00c8
+    );
+    background-size: 400% 400%;
+    animation: rotateBackground 4s linear infinite;
+
+  }
+
+.cardcontent {
+  position: relative;
+  z-index: 2;
+  background: rgba(10, 10, 10, 0.9);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+
+}
+
+.cardcontent h3 {
+  font-size: 1.1rem;
+}
+
+.cardcontent p {
+  color: #cccccc;
+  font-size: 1rem;
+  max-width: 500px;
+}
+.logo-section img{
+  margin-right: 20px;
+  width: 90px;
+  }
+  .section-effect .glowcard:nth-of-type(3) img {
+    width: 40px;
+  }
+/* --- Hover effect for the entire card --- */
+.glowcard:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 240, 255, 0.5);
+}
+
+/* --- Background Animation for the Glow --- */
+@keyframes rotateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#experience-description {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s;
+  height: 0;
+  overflow: hidden;
+}
+
+/* When you hover over the whole card, show the description */
+.glowcard:hover #experience-description {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .glowcard::before {
+    display: none; /* no moving glow on phones */
+  }
+  .glowcard{
+      border: white 1px solid;
+  }
+  .cardcontent{
+      background: rgba(10, 10, 10, 0.4);
+  }
+}

@@ -76,8 +76,8 @@ return (
             </div>
         </div>
         <div className={`gemini-chat ${viewLogo ? "":"close"}`}>
-            <Gemini.Avatar onClick={() => {setViewChat(!viewChat); setViewLogo(!viewLogo) }} size={100} className={`avatar-gemini`}/>
-            <p className='chat-text'>Chat with me!</p>
+            <Gemini.Avatar onClick={() => {setViewChat(!viewChat); setViewLogo(!viewLogo) }} size={100} className='avatar-gemini'/>
+            <p onClick={() => {setViewChat(!viewChat); setViewLogo(!viewLogo) }} className='chat-text'>Chat with me!</p>
         </div>
     </>
 )

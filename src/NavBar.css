@@ -12,9 +12,7 @@
   z-index: 1;
 }
 .navbar h1 {
-  font-size: 1.5rem;
-  padding-left: 1%;
-
+  min-width: 180px;
 }
 
 .navbar ul {
@@ -25,17 +23,18 @@
 .navbar li {
   margin-right: 20px;
   padding: 10px 20px;
+  border: rgb(118, 70, 143) 1px solid;
   border-radius: 10px;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.2s ease-in-out;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0px); /* Optional: for a frosted glass effect currently set to 0*/
   /*-webkit-backdrop-filter: blur(0px);  Optional: for a frosted glass effect for safari browsers */
 }
 
 .navbar li:hover {
-  box-shadow: 0px 0px 10px white;
-
-  background: black;
+  
+  border: rgb(40, 112, 139) 1px solid;
+  background: rgb(0, 0, 0);
 }
 
 .navbar ul li button {

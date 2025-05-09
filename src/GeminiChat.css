@@ -42,18 +42,20 @@ input {
     z-index: 2;
     bottom: 10px;
     right: 20px;
-    animation: pulse 2s infinite;
 }
 .avatar-gemini{
+  filter: drop-shadow(0 0 20px #b704ee);
     cursor: pointer;
-    /*animation: pulse 2s infinite;*/
+    animation: pulse 2s infinite;
     border: white 1px solid;
-    transition: transform 0.3s ease, filter 0 ease;
 }
 .avatar-gemini:hover{
     animation:none;
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 10px #00ffe1);
+    filter: drop-shadow(0 0 20px #0485ee);
+    transform: scale(1.12);
+}
+.chat-text:hover{
+  transform: scale(1.1);
 }
 @keyframes pulse {
     0% {
@@ -70,14 +72,13 @@ input {
 .chat-text {
     position: relative;
     text-align: center;
-    padding: 5px;
+    padding: 7px;
     color: #fff;
     background: #000;
     cursor: pointer;
     overflow: hidden;
     border-radius: 8px; /* optional: rounded corners */
     z-index: 0;
-    border: 2px solid transparent; /* Needed! */
   }
   
   .chat-text::before {
@@ -142,8 +143,8 @@ input {
     border: white 1px solid;
     border-radius: 12px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction:column;
+    justify-content:flex-start;
     margin: 10px;
     bottom: 60px;
     top: 10%;
@@ -171,4 +172,3 @@ form button {
     border-radius: 10px;
 
 }
-
