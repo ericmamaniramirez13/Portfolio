@@ -2,6 +2,7 @@ import amazonLogo from '../assets/Amazon_logo.svg';
 import paypalLogo from '../assets/PayPal_logo.svg';
 import gmLogo from '../assets/GM_logo.svg';
 import '../GlowEffect.css';
+import "../Experience.css";
 const experiences = [
     {
       company: 'PayPal',
@@ -41,7 +42,7 @@ const Experience = () => {
   return (
     <section className="section-effect">
       {experiences.map((exp, idx) => (
-          <div className="glowcard" key={idx}>
+          <div className="experience-glow-card glow-card" key={idx}>
             <div className="cardcontent">
               <h3>{exp.role} @ {exp.company}</h3>
               <p className="exp-time">{exp.time}</p>

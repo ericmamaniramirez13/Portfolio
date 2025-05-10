@@ -1,4 +1,5 @@
 import '../Projects.css'
+import "../GlowEffect.css"
 
 const projects = [
   {
@@ -37,7 +38,7 @@ const Projects = () => {
     return (
       <section className="projects-grid">
       { projects.map((proj, x) => (
-              <div className="glow-card " key={x}>
+              <div className="projects-glow-card glow-card" key={x}>
                 <div className="card-content">
                   <h2>{proj.title}</h2>
                   <p>{proj.description}</p>

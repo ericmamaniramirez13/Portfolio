@@ -27,7 +27,7 @@
 .gemini-chat.close {
     display: none;
   }
-input {
+.gemini-container form input {
     position: absolute;
     left: 10px;
     top: 90%;
@@ -154,7 +154,7 @@ input {
 .response p {
     margin: 10px 5px;
 }
-form button {
+.gemini-container form button {
     all: unset;
     position: absolute;
     left:85%;

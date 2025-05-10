@@ -1,6 +1,7 @@
 # Portfolio2025
 This is my portfolio for year 2025. The purpose is to show my experience, skills, projects, etc. I aim to share this portfolio with potential employers and professors to request recommendation letters.
-Original Author: Eric Mamani - Core architecture, front-end and backend design.
+
+- Original Author: Eric Mamani - Core architecture, front-end, and backend design.
 
 # Background
 
@@ -8,6 +9,7 @@ Original Author: Eric Mamani - Core architecture, front-end and backend design.
 - "@google/genai": "^0.12.0", main library to work with gemini api
 - "@lobehub/icons": "^2.0.0", only 1 icon-logo is using this. I might remove it in the future.
 - dynamically loading tsParticles via a CDN. For more info: https://particles.js.org/
+- "firebase": "^11.7.1", manage the database for contact section requests
 
 # React + Vite
 
