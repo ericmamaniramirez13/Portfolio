@@ -2,7 +2,7 @@ import amazonLogo from '../assets/Amazon_logo.svg';
 import paypalLogo from '../assets/PayPal_logo.svg';
 import gmLogo from '../assets/GM_logo.svg';
 import '../GlowEffect.css';
-import "../Experience.css";
+import "./Experience.css";
 const experiences = [
     {
       company: 'PayPal',

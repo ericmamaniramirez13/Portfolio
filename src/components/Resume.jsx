@@ -1,4 +1,4 @@
-import '../Resume.css';
+import './Resume.css';
 
 const Resume = () => {
     return (
@@ -8,7 +8,7 @@ const Resume = () => {
         <a href="EricMamaniPortfolio.pdf" target="_blank" rel="noopener noreferrer" download>
           <button>Download Resume</button>
         </a>
-        <p>Click the button above to download my resume.</p>
+
       </div>
     );
   };

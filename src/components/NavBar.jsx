@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import '../NavBar.css';
-import "./About.jsx";
+import './NavBar.css';
 import About from './About.jsx';
 import Experience from './Experience.jsx';
 import Resume from './Resume.jsx';

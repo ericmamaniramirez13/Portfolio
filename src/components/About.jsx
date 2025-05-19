@@ -1,6 +1,8 @@
-import '../About.css';
+import './About.css';
 import BYUI from "../assets/BYUI_blue.svg";
 import Diploma from "../assets/Diploma.jpg";
+import VisitCounter from './VisitCounter';
+//import RealTimeChat from './RealTimeChat';
 
 const About = () => {
     return (
@@ -17,6 +19,9 @@ const About = () => {
             <p>I'm a passionate software engineer with a strong foundation in computer science and mathematics. I love solving complex problems and building efficient solutions.</p>
             <p>Currently, I'm working as a Software Engineer Intern at Amazon, where I am gaining hands-on experience in software development and collaborating with talented teams.</p>
             <div id="about-me">
+                {/*<div className='real-chat'>
+                    <RealTimeChat />
+                </div>*/}
                 <div className='diploma'>
                     <img src={Diploma} alt="Diploma" loading="lazy" />
                 </div>
@@ -26,6 +31,9 @@ const About = () => {
                     <p>Brigham Young University - Idaho</p>
                     <img src = {BYUI} loading='lazy' alt='School Logo BYU-I'/>
                 </div>
+            </div>
+            <div>
+                <VisitCounter />
             </div>
         </div>
     );
