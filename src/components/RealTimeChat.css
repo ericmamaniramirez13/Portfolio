@@ -1,0 +1,54 @@
+#real-time-chat-container {
+    position:relative;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    /*border: white 1px solid;*/
+    height: 350px;
+}
+.real-time-chat-history{
+    position:absolute;
+    background: rgb(0, 0, 0, 0.6);
+    top:10px;
+    left:10px;
+    right:10px;
+    bottom:30px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    border: rgb(124, 43, 123) 1px solid;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 5px;
+}
+#real-time-chat-container form{
+    position: absolute;
+    top: 330px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+#chat-alias{
+    max-width: 90px;
+}
+.real-time-chat-history::-webkit-scrollbar {
+  width: 15px; /* Adjust as needed */
+}
+
+.real-time-chat-history::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent; /* Or any background color */
+}
+
+.real-time-chat-history::-webkit-scrollbar-thumb {
+  background-color: rgb(68, 118, 138); /* Or your scrollbar color */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 2px solid transparent; /* To avoid visual artifacts */
+  background-clip: padding-box;
+  border: black 1px solid;
+}
+
+.real-time-chat-history::-webkit-scrollbar-thumb:hover {
+  background-color: #7bb2e2;
+}

@@ -3,7 +3,7 @@ import { Gemini } from '@lobehub/icons';
 import { GoogleGenAI } from "@google/genai";
 import { useState, useRef, useEffect } from "react";
 import GEMINI from "../assets/gemini.svg";
-import "../GeminiChat.css";
+import "./GeminiChat.css";
 
 //dotenv.config();
 //const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
@@ -32,7 +32,7 @@ const GeminiChat = () => {
         conversation.push({ role: "user", parts: [{ text: prompt}] });
         setPrompt("");
         const AIresponse = await ai.models.generateContent({
-          model: "gemini-2.0-flash-lite",
+          model: "gemini-2.0-flash",
           contents: conversation,
         });
         /*const res = await fetch('/api/chat', { // notice: just "/api/chat"
@@ -68,7 +68,7 @@ return (
  
             </div>
             <form onSubmit={main}>
-                <input type="text" value={prompt} onChange={(e) => setPrompt(e.target.value)} placeholder="Ask anything, Ex: Why should I hire Eric?" ref={inputRef}/>
+                <input id='chat-input' type="text" value={prompt} onChange={(e) => setPrompt(e.target.value)} placeholder="Ask anything, Ex: Why should I hire Eric?" ref={inputRef}/>
                 <button type="submit">Send</button>
             </form>
             <div className="response" ref={chatScrollRef}>

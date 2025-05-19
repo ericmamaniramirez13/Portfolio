@@ -6,6 +6,7 @@
     margin-top: 40px;
     gap: 2rem;
     padding: 2rem;
+    align-items: start;
 }
 .contact-content{
   position: relative;
@@ -38,7 +39,12 @@
   box-shadow: 0 0 25px rgba(201, 235, 79, 0.5);
   border: rgb(118, 70, 143) 1px solid;
 }
+#contact-form div{
+  min-height: 60px;
+  align-content: center;
+  align-items: center;
 
+}
 @media (max-width: 768px) {
   .contact-glow-card::before {
     display: none; /* no moving glow on phones */

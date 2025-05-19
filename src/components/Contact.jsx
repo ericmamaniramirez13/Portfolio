@@ -1,9 +1,9 @@
-import { initializeApp } from "firebase/app";
 import { useState } from "react";
 import { addDoc, collection} from "firebase/firestore";
 import GitHub from '../assets/github_logo.svg';
 import LinkedIn from '../assets/linkedin_logo.svg';
-import '../Contact.css';
+import Instagram from "../assets/instagram_logo.svg"
+import './Contact.css';
 import {db} from "../FireBaseDB"
 
 const Contact = () => {
@@ -54,14 +54,14 @@ const handleSubmit = async (e) => {
         <section className="contact-container">
             <div className="contact-glow-card glow-card">
                 <div className="contact-content">
-                    <form onSubmit={handleSubmit}>
+                    <form id="contact-form" onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor="full-name">Full Name: </label>
-                            <input type="text" id="full-name" value={fullName} onChange={(e) => setFullName(e.target.value)}/>
+                            <input type="text" id="full-name" value={fullName} onChange={(e) => setFullName(e.target.value)} autoComplete="name" />
                         </div>
                         <div>
                             <label htmlFor="email">Email: </label>
-                            <input id="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <input id="email" required value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
                         </div>
                         <div>
                             <label htmlFor="recruiter-check">Are you a Recruiter? : </label>
@@ -71,16 +71,21 @@ const handleSubmit = async (e) => {
                             <label htmlFor="contact-message">Message: </label>
                             <textarea id="contact-message" required value={message} onChange={(e) => setMessage(e.target.value)} />
                         </div>
-                        <button type="submit">SUBMIT</button>
+                        <div>
+                            <button type="submit">SUBMIT</button>
+                        </div>
+                        <div className="contact-logos">
+                            <a href='https://github.com/ericmamaniramirez13' target='_blank' rel="noopener noreferrer">
+                                <img src = {GitHub} />
+                            </a>
+                            <a href='https://www.instagram.com/ericmamani13/' target='_blank' rel="noopener noreferrer">
+                                <img src = {Instagram} />
+                            </a>
+                            <a href='https://www.linkedin.com/in/ericmamani/' target='_blank' rel="noopener noreferrer">
+                                <img src = {LinkedIn} />
+                            </a>
+                        </div>
                     </form>
-                    <div className="contact-logos">
-                        <a href='https://github.com/ericmamaniramirez13' target='_blank' rel="noopener noreferrer">
-                            <img src = {GitHub} />
-                        </a>
-                        <a href='https://www.linkedin.com/in/ericmamani/' target='_blank' rel="noopener noreferrer">
-                            <img src = {LinkedIn} />
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
