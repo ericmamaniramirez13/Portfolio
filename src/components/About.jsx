@@ -16,8 +16,9 @@ const About = () => {
                 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00FFA3&center=true&vCenter=true&width=435&lines=Math+Nerd+%7C+Problem+Solver" loading='lazy' alt="Typing SVG" />
                 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=FF61C3&center=true&vCenter=true&width=435&lines=Lifelong+Learner" loading='lazy' alt="Typing SVG" />
             </div>
-            <p>I'm a passionate software engineer with a strong foundation in computer science and mathematics. I love solving complex problems and building efficient solutions.</p>
-            <p>Currently, I'm working as a Software Engineer Intern at Amazon, where I am gaining hands-on experience in software development and collaborating with talented teams.</p>
+            <p>I'm a Computer Science graduate and Software Engineer who enjoys building scalable applications and solving challenging problems at the intersection of math and technology.</p>
+<p>This summer, I’m interning at Amazon, where I’m developing backend services with AWS (Lambda, SNS, CloudWatch) and collaborating with engineers to deliver production-ready features.</p>
+
             <div id="about-me">
                 {/*<div className='real-chat'>
                     <RealTimeChat />
@@ -27,7 +28,7 @@ const About = () => {
                 </div>
                 <div className="grad-info">
                     <p>Bachelor of Science in <u>Computer Science</u></p>
-                    <p>🎓 Graduated(07/2024)</p>
+                    <p>🎓 Graduated(12/2024)</p>
                     <p>Brigham Young University - Idaho</p>
                     <img src = {BYUI} loading='lazy' alt='School Logo BYU-I'/>
                 </div>

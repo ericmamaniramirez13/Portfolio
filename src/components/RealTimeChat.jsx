@@ -1,6 +1,6 @@
-import { onSnapshot, query, orderBy, addDoc, collection, serverTimestamp } from "firebase/firestore";
+/*import { onSnapshot, query, orderBy, addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useState, useEffect, useRef } from "react";
-import { db } from "../FireBaseDB"; // Assuming your db export is correctly configured here
+import { db } from "../../database/FireBaseDB"; // Assuming your db export is correctly configured here
 import "./RealTimeChat.css"; // Make sure this path is correct
 
 const RealTimeChat = () => {
@@ -67,17 +67,15 @@ const RealTimeChat = () => {
     <div id="real-time-chat-container">
       <div className="real-time-chat-history" ref={realTimeChatScrollRef}>
         {comments.map((c) => (
-          <div key={c.id} className="comment-entry"> {/* Added a class for styling individual comments */}
-            <span className="comment-alias" style={{ fontSize: "10px" }}> {/* Added a class for alias styling */}
+          <div key={c.id} className="comment-entry">
+            <span className="comment-alias" style={{ fontSize: "10px" }}>
               {c.alias}
             </span>
             {`: ${c.text}`}
-            {/* Optionally display formatted timestamp - requires date utility like date-fns or moment.js */}
-            {/* c.timestamp && <span className="comment-timestamp">{new Date(c.timestamp.toDate()).toLocaleTimeString()}</span> */}
           </div>
         ))}
       </div>
-      <form onSubmit={sendComment} className="real-time-chat-form"> {/* Added a class for form styling */}
+      <form onSubmit={sendComment} className="real-time-chat-form">
         <input
           id="chat-alias"
           type="text"
@@ -100,4 +98,4 @@ const RealTimeChat = () => {
   );
 };
 
-export default RealTimeChat;
+export default RealTimeChat;*/

@@ -4,21 +4,23 @@ import gmLogo from '../assets/GM_logo.svg';
 import '../GlowEffect.css';
 import "./Experience.css";
 const experiences = [
-    {
+    /*{
       company: 'PayPal',
       logo: paypalLogo,
       role: 'Software Engineer Intern',
       time: 'Fall 2025 (Offer Extended)',
       description:
         'Will contribute to backend infrastructure and help streamline payment pipelines across scalable distributed systems.',
-    },
+    },*/
     {
         company: 'Amazon',
         logo: amazonLogo,
         role: 'Software Engineer Intern',
-        time: 'April 2025 - Present',
-        description:
-          "I'll work at Amazon in the store organizacion. Details are yet to be determined.",
+        time: 'May 2025 - Present, Irvine, CA',
+        description: [
+          'Led end-to-end development of a Data Management Tool, a critical self-service platform designed to organize, track, and manage large-scale online experiments (A/B tests) across Amazon Stores.',
+          'Designed and implemented a full-stack solution leveraging TypeScript/React for the intuitive user interface and Python with AWS Lambda and DynamoDB for robust backend services and data management.'
+        ],
       },
     {
       company: 'General Motors',
@@ -46,7 +48,13 @@ const Experience = () => {
             <div className="cardcontent">
               <h3>{exp.role} @ {exp.company}</h3>
               <p className="exp-time">{exp.time}</p>
-              <p id='experience-description'>{exp.description}</p>
+              {Array.isArray(exp.description) ? (
+                <ul id='experience-description'>
+                  {exp.description.map((item, i) => <li key={i}>{item}</li>)}
+                </ul>
+              ) : (
+                <p id='experience-description'>{exp.description}</p>
+              )}
               {/*<p>{exp.description}</p>*/}
               <div className="logo-section">
                 <img className="company-logo" src={exp.logo} alt={`${exp.company} logo`} />

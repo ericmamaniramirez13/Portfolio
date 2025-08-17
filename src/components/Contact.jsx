@@ -4,7 +4,7 @@ import GitHub from '../assets/github_logo.svg';
 import LinkedIn from '../assets/linkedin_logo.svg';
 import Instagram from "../assets/instagram_logo.svg"
 import './Contact.css';
-import {db} from "../FireBaseDB"
+import {db} from "../../database/FireBaseDB"
 
 const Contact = () => {
     const[fullName, setFullName] = useState("");
@@ -56,7 +56,7 @@ const handleSubmit = async (e) => {
                 <div className="contact-content">
                     <form id="contact-form" onSubmit={handleSubmit}>
                         <div>
-                            <label htmlFor="full-name">Full Name: </label>
+                            <label htmlFor="full-name">Name: </label>
                             <input type="text" id="full-name" value={fullName} onChange={(e) => setFullName(e.target.value)} autoComplete="name" />
                         </div>
                         <div>
@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
                             <label htmlFor="contact-message">Message: </label>
                             <textarea id="contact-message" required value={message} onChange={(e) => setMessage(e.target.value)} />
                         </div>
-                        <div>
+                        <div className="contact-submit-button">
                             <button type="submit">SUBMIT</button>
                         </div>
                         <div className="contact-logos">
