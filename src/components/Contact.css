@@ -45,6 +45,28 @@
   align-items: center;
 
 }
+.contact-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 0;
+  /*border: 1px solid white;*/
+  width: fit-content;
+}
+.contact-submit-button button {
+  background: rgba(25, 102, 157, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-submit-button button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 40px rgba(201, 235, 79, 0.5);
+  background:  rgb(90, 18, 91);
+  border: rgb(118, 70, 143) 1px solid;
+}
 @media (max-width: 768px) {
   .contact-glow-card::before {
     display: none; /* no moving glow on phones */
