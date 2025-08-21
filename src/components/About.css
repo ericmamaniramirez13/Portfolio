@@ -17,16 +17,19 @@
 .grad-info{
     align-content: center;
 }
+#about-me .diploma img {
+    width: 350px;
+    margin-top: 15px;
+    border: rgb(163, 87, 87) solid 4px;
+    border-radius: 15px;
+}
 #about-me .grad-info img {
     border: white solid 1px;
     border-radius: 15px;
     padding: 10px;
 }
-#about-me .diploma img {
-    width: 400px;
-    margin-top: 15px;
-    border: rgb(163, 87, 87) solid 4px;
-    border-radius: 15px;
+#about-me .grad-info img:nth-of-type(2){
+    width: 150px;
 }
 #about-me .real-chat{
     position: relative;

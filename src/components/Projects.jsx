@@ -1,4 +1,4 @@
-import '../Projects.css'
+import '../components/Projects.css'
 import "../GlowEffect.css"
 
 const projects = [

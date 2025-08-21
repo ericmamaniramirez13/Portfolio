@@ -19,36 +19,38 @@ fetch("InitialPrompt.txt")
 let conversation = [];
 const GeminiChat = () => {
     const [prompt, setPrompt] = useState("");
-    const [response, setResponse] = useState("Hello! I'm Gemini, Eric's chatbot. Eric is a recent CS grad with stellar internships at Amazon, PayPal, and GM. He's proficient in full-stack development, cloud technologies, and is a fast learner. He's already got offers for next year! Consider him for your open roles.");
+    const [response, setResponse] = useState("Hello! I'm Gemini, Eric's chatbot. Eric is a recent CS grad with stellar internships at Amazon (2x) and General Motors. He's already got offers for next year! Consider him for your open roles.");
     const [viewChat, setViewChat] = useState(false);
     const [viewLogo, setViewLogo] = useState(true);
     const [history, setHistory] = useState(["Gemini: " + response])
+    const [isLoading, setIsLoading] = useState(false);
     const chatScrollRef = useRef(null)
     const inputRef = useRef(null);
     const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
     const main = async (e) => {
         e.preventDefault();
-        conversation.push({ role: "user", parts: [{ text: prompt}] });
+        const userMessage = prompt;
+        conversation.push({ role: "user", parts: [{ text: userMessage}] });
+        
+        // Add user message immediately
+        setHistory(prevHistory => [...prevHistory, "You: " + userMessage]);
         setPrompt("");
-        const AIresponse = await ai.models.generateContent({
-          model: "gemini-2.0-flash",
-          contents: conversation,
-        });
-        /*const res = await fetch('/api/chat', { // notice: just "/api/chat"
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify( conversation ),
-          });
-          console.log(conversation)
-        const AIresponse = await res.json();*/
-        setResponse(AIresponse.text);
-        setHistory(prevHistory => [
-            ...prevHistory,
-            "You: " + prompt,
-            "Gemini: " + AIresponse.text
-          ]);
-        conversation.push({ role: "model", parts: [{ text: AIresponse.text }] });
+        setIsLoading(true);
+        
+        try {
+            const AIresponse = await ai.models.generateContent({
+              model: "gemini-2.0-flash",
+              contents: conversation,
+            });
+            setResponse(AIresponse.text);
+            setHistory(prevHistory => [...prevHistory, "Gemini: " + AIresponse.text]);
+            conversation.push({ role: "model", parts: [{ text: AIresponse.text }] });
+        } catch (error) {
+            setHistory(prevHistory => [...prevHistory, "Gemini: Sorry, I encountered an error. Please try again."]);
+        } finally {
+            setIsLoading(false);
+        }
       }
     useEffect(() => {
         if (chatScrollRef.current) {
@@ -73,6 +75,7 @@ return (
             </form>
             <div className="response" ref={chatScrollRef}>
                 {history.map((message, index) => (<p key={index}>{message}</p>))}
+                {isLoading && <p className="loading-message">Gemini: Thinking...</p>}
             </div>
         </div>
         <div className={`gemini-chat ${viewLogo ? "":"close"}`}>
