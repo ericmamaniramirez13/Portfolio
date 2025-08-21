@@ -3,17 +3,17 @@ Eric Mamani
 ericmamaniramirez13@gmail.com | ericmamaniramirez13.github.io/Portfolio | (801) 404 9051
 https://www.linkedin.com/in/EricMamani
 Education
-Bachelor of Science in Computer Science	          I already Graduated on 07/2024
+Bachelor of Science in Computer Science	           Graduated: 12/2024
 Brigham Young University - Idaho	Rexburg, ID
-Relevant Coursework: Data Structures and Algorithms, Object-Oriented Programming (Java, JavaScript, Python), Full-Stack development, Relational Databases, and Machine Learning Fundamentals
+Relevant Coursework: Data Structures and Algorithms, Object-Oriented Programming, Full-Stack development, Relational Databases, and Machine Learning Fundamentals
 Work Experience
-Software Engineer Intern	(Offer Extended for Fall 2025)
-PayPal	Scottsdale, AZ
-Software Engineer Intern	(Offer Extended for Summer 2025)
+Software Engineer Intern	May 2025 - Present
 Amazon.com	Irvine, CA
+Led end-to-end development of a Data Management Tool, a critical self-service platform designed to organize, track, and manage large-scale online experiments (A/B tests) across Amazon Stores.
+Designed and implemented a full-stack solution leveraging TypeScript/React for the intuitive user interface and Python with AWS Lambda and DynamoDB for robust backend services and data management.
 Software Engineer Intern	May 2024 - October 2024
 General Motors	Austin, TX
-Produced high-quality unit tests and scalable code using Java and TestNG, increasing test coverage to 95%, leading to more reliable software and less manual testing
+Produced high-quality unit tests and scalable code using Java and TestNG, increasing test coverage to 95%, enable seamless debugging leading to more reliable software
 Spearheaded full-stack software development projects leveraging Python, JavaScript, and React, driving a 15% increase in user satisfaction by delivering high-quality, data-driven solutions.
 Collaborated in Agile/Scrum teams to deliver high-quality software on a regular sprint cycle, participating in sprint planning, design, code reviews, and daily stand-ups 
 Software Engineer Intern	May 2023 - July 2023
@@ -21,10 +21,6 @@ Amazon.com	Tempe, AZ
 Developed a new UI operating React, Angular, and AWS for customers to input and validate deal information, improving error feedback on invalid requests
 Implemented API integrations and backend services, enhancing the efficiency of the deal validation process by 20%, automating checks, and providing detailed responses
  
-DevOps Engineer Intern	June 2022 - August 2022
-Mr. Cooper Group	Coppell, TX
-Optimized infrastructure automation, reduced deployment time by 5%, and minimized manual effort
-Collaborated on integrating with cloud providers, boosting infrastructure scalability by 10%, and ensuring 99.9% end-user reliability
 Projects
 Math Mobile Application	December 2024
 Designed a mobile application using Android Studio and Java to assist users in learning math problem-solving techniques efficiently, improving user engagement and comprehension
@@ -38,7 +34,10 @@ Cloud & DevOps: AWS, Google Cloud Platform, Microsoft Azure, Docker, REST APIs, 
 Technologies & Frameworks: React, Node.js, Angular, Selenium, PyTorch, Git, Power BI
 Tools: VS Code, IntelliJ IDEA, Swagger, GitHub, Jira
 Core Strengths: Effective Communication, Critical Thinking, Fast Learner, Collaborative Teamwork
+
 I want you to be a chatbot that promoted me as an aspiring software engineer to potential employers.
 People who use you are most likely recruiters who opened my portfolio and you are there as a chatbot.
 Summarize the your responses to no more than 100 tokens because this is a chatbot and we don't want so much text.
 Your goal is to share anything that can help the recruiter to hire me. Be polite, conscise, and excited in your answers.
+Sell me the best way you can!
+Personal notes, I'm a recen graduate from brigham young university - idaho with a bachelor in computer science. I'm currently looking for a job with full time preference since I already have several internships.

@@ -7,7 +7,6 @@ import Contact from './Contact.jsx';
 import Skills from './Skills.jsx';
 import Projects from './Projects.jsx';
 
-
 const Navbar = () => {
     const [view, setView] = useState('home');
     const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +44,7 @@ const Navbar = () => {
                 <li><button onClick = {() => {setView("experience"); setIsOpen(false);}}>Experience</button></li>
                 <li><button onClick = {() => {setView("projects"); setIsOpen(false);}}>Projects</button></li>
                 <li><button onClick = {() => {setView("skills"); setIsOpen(false);}}>Skills</button></li>
-                <li><button onClick = {() => {setView("resume"); setIsOpen(false);}}>Resume</button></li>
+                <li><button className='skills-glow-button' onClick = {() => {setView("resume"); setIsOpen(false);}}>Resume</button></li>
                 <li><button onClick = {() => {setView("contact"); setIsOpen(false);}}>Contact</button></li>
             </ul>
         </nav>
