@@ -48,7 +48,7 @@
   background-color: transparent;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
-  /*border: 1px solid white;*/
+  border: 1px solid white;
   padding: 10px 20px;
   margin: -10px -20px;
   cursor: pointer;
@@ -70,11 +70,14 @@
 }
 @media (max-width: 768px) {
   .navbar ul li .skills-glow-button {
-    all: revert !important;
+    all: unset !important;
+    background-color: green !important;
   }
-  
+
   .navbar ul li .skills-glow-button::before {
     display: none !important;
+    all: unset !important;
+    background-color: green !important;
   }
   
   .navbar ul li .skills-glow-button:hover {

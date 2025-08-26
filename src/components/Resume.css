@@ -26,7 +26,8 @@
     min-width: 506px;
 
 }
-embed {
+.resume-container iframe {
     max-width: 700px;
     border-radius: 15px;
+    border: none;
 }

@@ -24,17 +24,15 @@ const About = () => {
                 {/*<div className='real-chat'>
                     <RealTimeChat />
                 </div>*/}
-                <div className='diploma'>
+                {/*<div className='diploma'>
                     <p>Bachelor of Science in <u>Computer Science</u></p>
                     <p>🎓 Graduated(12/2024)</p>
                     <img src={Diploma} alt="Diploma" loading="lazy" />
-                </div>
+                </div>*/}
                 <div className="grad-info">
-                    <p>Bachelor of Science in <u>Computer Science</u></p>
-                    <p>🎓 Graduated(12/2024)</p>
-                    <p>Brigham Young University - Idaho</p>
+                    <p>Bachelor of Science in <u>Computer Science</u><br/>Graduated Dec 2024</p>
                     <img src = {BYUI} loading='lazy' alt='School Logo BYU-I'/>
-                    <p>Bachelor of Science in <u>Mathematics</u><br/>(In progress)</p>
+                    <p>Master of Science in <u>Computer Science</u><br/>(Anticipated Dec 2026)</p>
                     <img src = {ASU} loading='lazy' alt='ASU logo'></img>
                 </div>
             </div>
@@ -45,4 +43,3 @@ const About = () => {
     );
 }
 export default About;
-// This is a simple About component that provides a brief introduction about the developer.

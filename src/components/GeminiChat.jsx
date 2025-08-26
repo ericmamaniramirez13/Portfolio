@@ -19,7 +19,7 @@ fetch("InitialPrompt.txt")
 let conversation = [];
 const GeminiChat = () => {
     const [prompt, setPrompt] = useState("");
-    const [response, setResponse] = useState("Hello! I'm Gemini, Eric's chatbot. Eric is a recent CS grad with stellar internships at Amazon (2x) and General Motors. He's already got offers for next year! Consider him for your open roles.");
+    const [response, setResponse] = useState("Hello! I'm Gemini, Eric's chatbot. Eric is a Master student in CS with stellar internships at Amazon (2x) and General Motors. He's already got offers for next year! Consider him for your open roles.");
     const [viewChat, setViewChat] = useState(false);
     const [viewLogo, setViewLogo] = useState(true);
     const [history, setHistory] = useState(["Gemini: " + response])

@@ -7,9 +7,9 @@
 }
 #about-me {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: rgba(0, 208, 255, 0.2);
-    backdrop-filter: blur(2px);
+    /*grid-template-columns: 1fr 1fr;*/ /* Two equal columns for about me diploma*/
+    background: transparent;
+    backdrop-filter: blur(1px);
     border-radius: 15px;
     border: rgb(138, 138, 196) solid 1px;
     padding-bottom: 10px;
