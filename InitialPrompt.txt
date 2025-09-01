@@ -1,6 +1,6 @@
 This is my resume: 
 Eric Mamani
-ericmamaniramirez13@gmail.com | ericmamaniramirez13.github.io/Portfolio | (801) 404 9051
+ericmamaniramirez13@gmail.com | ericmamaniramirez13.github.io/Portfolio | ‭(801) 404 9051‬
 https://www.linkedin.com/in/EricMamani
 Education
 Master of Science in Computer Science	           Anticipated: 12/2026
@@ -10,20 +10,24 @@ Brigham Young University - Idaho	Rexburg, ID
 Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, Full-Stack Web Development, Database Design & Management, Cloud Computing, Machine Learning
 Work Experience
 Software Engineer Intern	May 2025 - Present
-Amazon.com	Irvine, CA
-Architected and led the end-to-end development of a Data Management Tool, a critical self-service platform for managing large-scale A/B tests, empowering product teams with data-driven insights.
-Engineered a scalable full-stack solution using TypeScript and React for an accessible, intuitive UI, and developed serverless backend microservices with Python, AWS Lambda, and DynamoDB to ensure robust data processing and management.
+Amazon	Irvine, CA
+Added a new “weblab cleanup” feature in Internal UI, enabling marketers to smoothly update experiment states (launch, not launch, remove) after A/B test results were collected
+Engineered a scalable full-stack dashboard with TypeScript + React and serverless microservices (Python, AWS Lambda, DynamoDB), supporting 500+ concurrent Weblabs and providing 100+ teams with reliable, real-time experiment data.
+Automated Weblab lifecycle updates, reducing manual edits by 95% and saving the org an estimated 200+ hours per quarter.
+Enhanced system reliability by integrating CloudWatch + SNS notifications to automatically flag Weblabs active for 60+ days, ensuring timely cleanup and keeping the database consistent across 5+ regions.
 Software Engineer Intern	May 2024 - October 2024
 General Motors	Austin, TX
-Established a Continuous Integration (CI) testing pipeline using Java and TestNG, automating 100% of manual checks to run daily and pre-deployment, which enabled early bug detection and increased code quality.
-Drove a full-stack project from conception to deployment using JavaScript and React, creating a data-driven solution that directly resulted in a 15% increase in user satisfaction scores.
-Collaborated in Agile/Scrum teams to deliver high-quality software on a regular sprint cycle, participating in sprint planning, design, code reviews, and daily stand-ups 
+Enhanced Family First, an internal HR application used by 50,000+ GM employees worldwide, by implementing new features and fixing bugs, directly improving reliability and user satisfaction
+Established a Continuous Integration (CI) testing pipeline using Java and TestNG, automating 100% of manual checks, reducing pre-deployment testing time from 2 hours to under 10 minutes
+Partnered with cross-functional Agile teams, contributing to 10+ successful sprint deliveries by participating in sprint planning, code reviews, and daily stand-ups
 Software Engineer Intern	May 2023 - July 2023
-Amazon.com	Tempe, AZ
-Developed a new UI operating React, Angular, and AWS for customers to input and validate deal information, improving error feedback on invalid requests
-Designed and implemented REST APIs and backend services using Java, automating data integrity checks to improve the deal validation process efficiency by 20%.
- 
+Amazon	Tempe, AZ
+Developed a responsive UI and promotion validation feature with React, Angular, AWS, and Java REST APIs, enabling 5,000+ Amazon sellers daily to check eligibility, eliminating manual review, cutting processing time ~80%, and saving 400+ team hours/month
+Enhanced error feedback and validation logic, helping sellers quickly identify ineligible products and reducing repeated support inquiries by ~30% 
 Projects
+Personal Portfolio	May 2025
+Built a “Contact Me” feature on my portfolio using GCP for secure message storage and automated email notifications, ensuring 100% of incoming recruiter inquiries are received promptly.
+
 Math Mobile Application	December 2024
 Designed a mobile application using Android Studio and Java to assist users in learning math problem-solving techniques efficiently, improving user engagement and comprehension
 Applied Object-Oriented Programming (OOP) principles to reduce 20% of initial code complexity while improving software maintainability, readability, and reusability
